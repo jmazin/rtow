@@ -4,7 +4,7 @@
 
 - Install CMake (on mac: `brew install cmake`)
 
-### Create a project (only have to this once)
+### Create a project (only have to do this once)
 
 - `cmake -B build`
 
