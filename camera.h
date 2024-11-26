@@ -30,14 +30,13 @@ class camera {
 
         std::cout << "P3\n" << image_width << ' ' << image_height << "\n255\n";
         for (int j = 0; j < image_height; ++j) {
-            std::clog << '\n' << "Scanlines remaining: " << (image_height - j);
+            std::clog << "Scanlines remaining: " << (image_height - j) << "\n";
             for (int i = 0; i < image_width; ++i) {
 
                 color pixel_color(0,0,0);
 
                 for (int sample = 0; sample < samples_per_pixel; sample++){
-                    // auto offset = sample_square();
-                    auto offset = vec3(0,0,0);
+                    auto offset = sample_square();
                     auto pixel_center = pixel00_loc + ((i + offset.x()) * pixel_delta_u) + ((j + offset.y()) * pixel_delta_v);
 
                     auto ray_origin = (defocus_angle <= 0) ? center : defocus_disk_sample();
@@ -121,7 +120,7 @@ class camera {
             return color(0,0,0);
         }
 
-        if (world.hit(r, interval(0.000001, infinity), rec)) {
+        if (world.hit(r, interval(.00001, infinity), rec)) {
             ray scattered;
             color attenuation;
             if(rec.mat->scatter(r, rec, attenuation, scattered)) {
