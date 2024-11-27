@@ -18,7 +18,7 @@
 
 ### Book Attribution
 
-**Title:** [Ray Tracing in One Weekend](https://raytracing.github.io/books/raytracinginoneweekend.html)  
+**Title:** [Ray Tracing in One Weekend](https://raytracing.github.io/books/RayTracingInOneWeekend.html)  
 **Author:** Peter Shirley, Trevor David Black, Steve Hollasch  
 **Version/Edition:** v4.0.0-alpha.2  
 
