@@ -13,5 +13,16 @@
 - Build project: `cmake --build build`
 - Create image: `build/inOneWeekend > image.ppm`
 - Open file (on mac): `open image.ppm`
-
 - In one line: `cmake --build build; build/inOneWeekend > image.ppm; open image.ppm`
+
+
+### Book Attribution
+
+**Title:** [Ray Tracing in One Weekend](https://raytracing.github.io/books/raytracinginoneweekend.html)  
+**Author:** Peter Shirley, Trevor David Black, Steve Hollasch  
+**Version/Edition:** v4.0.0-alpha.2  
+
+
+
+
+
